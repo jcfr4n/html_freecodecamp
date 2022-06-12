@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
@@ -14,11 +15,23 @@
         </header>
         <form action="#" id="survey-form">
             <section id="seccion1">
-                <label><input type="text" name="" id=""></label>
+                <label id="name-label">Name: <input type="text" id="name" placeholder="Introduzca nombre" required></label>
+                <label id="email-label">Email:<input type="email" id="email" placeholder="Introduzca email" required></label>
+                <label id="number-label">Number: <input type="number" id="number" min="0" max="5" placeholder="Introduzca número" required></label>
 
             </section>
             <section id="seccion2">
-
+                <fieldset>
+                    <legend>Género</legend>
+                    <label><input type="radio" id="genero" name="genero"> Masculino</label>
+                    <label><input type="radio" name="genero" id="genero"> Femenino</label>
+                </fieldset>
+                <label>Dropdown: 
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                    </select>
+                </label>
             </section>
             <section id="seccion3">
                 
