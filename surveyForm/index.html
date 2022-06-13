@@ -16,15 +16,19 @@
         <form action="#" id="survey-form">
             <section id="seccion1">
                 <label id="name-label">Name: <input type="text" id="name" placeholder="Introduzca nombre" required></label>
-                <label id="email-label">Email:<input type="email" id="email" placeholder="Introduzca email" required></label>
+                <label id="email-label">Email: <input type="email" id="email" placeholder="Introduzca email" required></label>
                 <label id="number-label">Number: <input type="number" id="number" min="0" max="5" placeholder="Introduzca número" required></label>
 
             </section>
             <section id="seccion2">
                 <fieldset>
                     <legend>Género</legend>
-                    <label><input type="radio" id="genero" name="genero"> Masculino</label>
-                    <label><input type="radio" name="genero" id="genero"> Femenino</label>
+                    <label>
+                        <input type="radio" id="generoM" name="genero" value="masculino" /> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" id="generoF" value="femenino" /> Femenino
+                    </label>
                 </fieldset>
                 <label>Dropdown: 
                     <select name="dropdown" id="dropdown">
@@ -32,10 +36,23 @@
                         <option value="2">Opción 2</option>
                     </select>
                 </label>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label>
+                        <input type="checkbox" name="skills" id="skill1" value="html"> html
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" id="skill2" value="css"> css
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" id="skill3" value="js"> javaScript
+                    </label>
+                </fieldset>
             </section>
             <section id="seccion3">
-                
+                <textarea name="textarea1" id="textarea1" cols="25" rows="10" placeholder="Introduzca su opinión aquí"></textarea>
             </section>
+            <button type="submit" id="submit">Enviar</button>
         </form>
     </div>
 </body>

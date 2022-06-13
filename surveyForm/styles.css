@@ -4,13 +4,13 @@
 }
 
 body {
-    background-color:darkgray;
+    background-color:orangered;
     width: 100%;
 }
 
 input {
     color:red;
-    background-color:darkgray;
+    background-color:lightgray;
 }
 
 #container {
@@ -35,8 +35,16 @@ section>label {
 }
 
 fieldset {
-    align-content: space-around;
-    
+    display: flex;
+    justify-content: space-around;
     max-width: 80%;
     margin: 0 auto;
+}
+
+textarea {
+    margin: 20px auto;
+}
+
+button {
+    margin: 20px auto;
 }
